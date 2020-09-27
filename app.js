@@ -37,8 +37,8 @@ app.post('/', async (req, res) => {
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: 'testboy244@gmail.com',
-            pass: 'lO2EXs5l'
+            user: 'fill in yours',
+            pass: 'fill in yours'
         }
     })
     console.log("2")
@@ -46,8 +46,8 @@ app.post('/', async (req, res) => {
     try {
         // send mail with defined transport object
         let info = await transporter.sendMail({
-            from: 'testboy244@gmail.com', // sender address
-            to: "ivri.korem@gmail.com", // list of receivers
+            from: '', // sender address
+            to: "", // list of receivers
             subject: "Node Contact Request", // Subject line
             text: "Hello world?", // plain text body
             html: output // html body
